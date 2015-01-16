@@ -26,6 +26,6 @@ var mage = new Mage({
 
 var app = connect()
   .use(connect.logger('dev'))
-  .use(connect.query());
+  .use(connect.query())
   .use(mage.middleware())
   .listen(process.env.PORT || 3000);
